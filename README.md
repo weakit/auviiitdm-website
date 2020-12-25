@@ -1,5 +1,7 @@
 # AUV Society 
 
+Website made with React, Bootstrap and SASS.
+
 ### Deployment
 
 https://auviiitdm.github.io/
