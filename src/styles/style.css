@@ -1060,7 +1060,14 @@ h2.title {
 .teams .container .card-container .cards .card-button:focus {
   outline: none;
 }
+.modal-content{
+  background-color: #161a22 !important;
 
+}
+#achieve2022{
+  background-color: #161a22 !important;
+
+}
 .teams .container .modal .modal-header,
 .teams .container .modal .modal-body,
 .teams .container .modal .modal-footer {
