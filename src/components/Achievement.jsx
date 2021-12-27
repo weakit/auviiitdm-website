@@ -1,6 +1,8 @@
 import React from "react";
 import SAUVC from "../assets/logo/sauvclogo.png";
 import ScrollAnimation from "react-animate-on-scroll";
+import MechanicalModal from "./Teams/Mechanical";
+
 
 const Achievements = () => {
   return (
@@ -75,10 +77,95 @@ const Achievements = () => {
               </div>
             </div>
           </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeIn">
+            <div className="row">
+              <div className="col-sm-8">
+                <div className="card">
+                  <div className="row">
+                    <div className="col-sm-2">
+                      <img src={SAUVC} alt="sauvc" width="90px"></img>
+                    </div>
+                    <div className="col-sm-10">
+                      <div className="card-body">
+                        <h6 className="sub-heading">
+                          <a data-toggle="modal" data-target="#achieve2022">
+                            Global Oceans 2021
+                          </a>
+                        </h6>
+                        <p>
+                          Title: Development of AUV for SAUVC During COVID-19
+                          Authors: Mayank Navneet Mehta, Subash Mylraj, Vishva
+                          Nilesh Bhate Conference: Global OCEANS 2021, San Diego
+                          – Porto, Sept 20-23, 2021
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-4 text-center">
+                <iframe
+                  title="video"
+                  src="https://www.youtube.com/embed/c58AMctLp04?playlist=c58AMctLp04&loop=1"
+                ></iframe>
+              </div>
+            </div>
+          </ScrollAnimation>
+          <div className="modal fade" id="achieve2022">
+            <div
+              className="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+              style={{ maxWidth: "600px" }}
+            >
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h4 className="modal-title">Research Paper</h4>
+                  <button type="button" className="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                </div>
+                <div className="modal-body">
+                  
+                    
+                      Title: Development of AUV for SAUVC During COVID-19
+                      Authors: Mayank Navneet Mehta, Subash Mylraj, Vishva
+                      Nilesh Bhate <br></br>Abstract: This paper describes the design,
+                      implementation, and testing of control and vision
+                      algorithms for an AUV in virtual and real environments.
+                      Hardware design and the software stack of the vec6
+                      underwater vehicle are described in this paper. The paper
+                      also presents a simulation test-bed, the uwv-simulator,
+                      which is developed using ROS and Gazebo. A custom arena
+                      similar to that used in the Singapore AUV Challenge is
+                      constructed in the simulation environment. The software
+                      stack is designed to execute higher and abstract
+                      algorithms without the trouble of going through the
+                      lower-level functions.<br></br> Conference: Global OCEANS 2021, San
+                      Diego – Porto, Sept 20-23, 2021 <br></br>Link to the work:
+                      <a
+                    href='https://github.com/auvsocietyiiitdm/uwv-simulator'
+                    target='blank'>
+                    <i className='fa'>&#xf1d2;</i>
+                  </a>
+                 
+                      
+                   
+                  
+                </div>
+                <div className="modal-footer">
+                  <button
+                    type="button"
+                    className="btn btn-danger"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </React.Fragment>
   );
 };
-
 export default Achievements;

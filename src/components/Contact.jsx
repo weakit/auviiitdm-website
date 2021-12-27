@@ -141,11 +141,11 @@ const Contacts = () => {
                     {"      "}
                     <br />
                     <span>
-                      <b>Subash Mylraj:</b> 7338815308
+                      <b>Vyshnav K:</b> 9447138708
                     </span>
                     <br />
                     <span>
-                      <b>Vishva Bhate:</b> 7710003212
+                      <b>Ruthwik Dasyam:</b> 7673972579
                     </span>
                   </p>
                 </div>
