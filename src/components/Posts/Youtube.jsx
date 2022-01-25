@@ -18,12 +18,12 @@ const Youtube = ({ setView }) => {
       <div className="col-sm-3">
         <ScrollAnimation animateIn="fadeIn">
           <ul className="list-group">
-            <li
+            {/* <li
               className="list-group-item"
               onClick={() => setView("instagram")}
             >
               Instagram
-            </li>
+            </li> */}
             <li className="list-group-item active">Youtube</li>
             <li className="list-group-item" onClick={() => setView("gallery")}>
               Gallery
