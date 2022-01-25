@@ -9,76 +9,82 @@ import Taniya from "../../assets/auv_photos_team/brilliantminds/taniya_kulkarni.
 const BrilliantMindmodal = () => {
   return (
     <React.Fragment>
-      <div className='modal fade' id='brilliant'>
-        <div className='modal-dialog modal-dialog-centered modal-dialog-scrollable'>
-          <div className='modal-content'>
-            <div className='modal-header'>
-              <h4 className='modal-title'>Brilliant Minds</h4>
-              <button type='button' className='close' data-dismiss='modal'>
+      <div className="modal fade" id="brilliant">
+        <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h4 className="modal-title">Brilliant Minds</h4>
+              <button type="button" className="close" data-dismiss="modal">
                 &times;
               </button>
             </div>
-            <div className='modal-body'>
-              <div className='img-flex'>
-                <div className='profile-modal'>
-                  <img src={Samrat} alt='Samrat' className='profile' />
+            <div className="modal-body">
+              <div className="img-flex">
+                <div className="profile-modal">
+                  <img src={Samrat} alt="Samrat" className="profile" />
                   <a
-                    href='https://www.linkedin.com/in/samrat-nachiyappan-62ba01148/'
-                    target='blank'>
-                    <i className='fa'>&#xf0e1;</i>
+                    href="https://www.linkedin.com/in/samrat-nachiyappan-62ba01148/"
+                    target="blank"
+                  >
+                    <i className="fa">&#xf0e1;</i>
                   </a>
                   <p>Samrat</p>
                 </div>
-                <div className='profile-modal'>
-                  <img src={Shelcia} alt='Shelcia' className='profile' />
-                  <a href='https://www.linkedin.com/in/shelcia/' target='blank'>
-                    <i className='fa'>&#xf0e1;</i>
+                <div className="profile-modal">
+                  <img src={Shelcia} alt="Shelcia" className="profile" />
+                  <a href="https://www.linkedin.com/in/shelcia/" target="blank">
+                    <i className="fa">&#xf0e1;</i>
                   </a>
                   <p>Shelcia</p>
                 </div>
-                <div className='profile-modal'>
-                  <img src={Praveen} alt='Praveen' className='profile' />
+                <div className="profile-modal">
+                  <img src={Praveen} alt="Praveen" className="profile" />
                   <a
-                    href='https://www.linkedin.com/in/v-s-praveen-74268988/'
-                    target='blank'>
-                    <i className='fa'>&#xf0e1;</i>
+                    href="https://www.linkedin.com/in/v-s-praveen-74268988/"
+                    target="blank"
+                  >
+                    <i className="fa">&#xf0e1;</i>
                   </a>
                   <p>Praveen</p>
                 </div>
-                <div className='profile-modal'>
-                  <img src={Amith} alt='Amith' className='profile' />
+                <div className="profile-modal">
+                  <img src={Amith} alt="Amith" className="profile" />
                   <a
-                    href='https://www.linkedin.com/in/amith-prasanth-k-a02a03191'
-                    target='blank'>
-                    <i className='fa'>&#xf0e1;</i>
+                    href="https://www.linkedin.com/in/amith-prasanth-k-a02a03191"
+                    target="blank"
+                  >
+                    <i className="fa">&#xf0e1;</i>
                   </a>
                   <p>Amith Prasanth</p>
                 </div>
-                <div className='profile-modal'>
-                  <img src={Anirudh} alt='Anirudh' className='profile' />
+                <div className="profile-modal">
+                  <img src={Anirudh} alt="Anirudh" className="profile" />
                   <a
-                    href='https://www.linkedin.com/in/anirudh-samazder-13743a1b2/'
-                    target='blank'>
-                    <i className='fa'>&#xf0e1;</i>
+                    href="https://www.linkedin.com/in/anirudh-samazder-13743a1b2/"
+                    target="blank"
+                  >
+                    <i className="fa">&#xf0e1;</i>
                   </a>
                   <p>Anirudh Samazder</p>
                 </div>
-                <div className='profile-modal'>
-                  <img src={Taniya} alt='Taniya' className='profile' />
+                <div className="profile-modal">
+                  <img src={Taniya} alt="Taniya" className="profile" />
                   <a
-                    href='http://linkedin.com/in/taniya-s-737b46111'
-                    target='blank'>
-                    <i className='fa'>&#xf0e1;</i>
+                    href="http://linkedin.com/in/taniya-s-737b46111"
+                    target="blank"
+                  >
+                    <i className="fa">&#xf0e1;</i>
                   </a>
                   <p>Taniya Kulkarni</p>
                 </div>
               </div>
             </div>
-            <div className='modal-footer'>
+            <div className="modal-footer">
               <button
-                type='button'
-                className='btn btn-danger'
-                data-dismiss='modal'>
+                type="button"
+                className="btn btn-danger"
+                data-dismiss="modal"
+              >
                 Close
               </button>
             </div>
