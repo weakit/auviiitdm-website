@@ -1,8 +1,7 @@
 import React from "react";
 import SAUVC from "../assets/logo/sauvclogo.png";
 import ScrollAnimation from "react-animate-on-scroll";
-import MechanicalModal from "./Teams/Mechanical";
-
+// import MechanicalModal from "./Teams/Mechanical";
 
 const Achievements = () => {
   return (
@@ -88,6 +87,7 @@ const Achievements = () => {
                     <div className="col-sm-10">
                       <div className="card-body">
                         <h6 className="sub-heading">
+                          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                           <a data-toggle="modal" data-target="#achieve2022">
                             Global Oceans 2021
                           </a>
@@ -124,32 +124,27 @@ const Achievements = () => {
                   </button>
                 </div>
                 <div className="modal-body">
-                  
-                    
-                      Title: Development of AUV for SAUVC During COVID-19
-                      Authors: Mayank Navneet Mehta, Subash Mylraj, Vishva
-                      Nilesh Bhate <br></br>Abstract: This paper describes the design,
-                      implementation, and testing of control and vision
-                      algorithms for an AUV in virtual and real environments.
-                      Hardware design and the software stack of the vec6
-                      underwater vehicle are described in this paper. The paper
-                      also presents a simulation test-bed, the uwv-simulator,
-                      which is developed using ROS and Gazebo. A custom arena
-                      similar to that used in the Singapore AUV Challenge is
-                      constructed in the simulation environment. The software
-                      stack is designed to execute higher and abstract
-                      algorithms without the trouble of going through the
-                      lower-level functions.<br></br> Conference: Global OCEANS 2021, San
-                      Diego – Porto, Sept 20-23, 2021 <br></br>Link to the work:
-                      <a
-                    href='https://github.com/auvsocietyiiitdm/uwv-simulator'
-                    target='blank'>
-                    <i className='fa'>&#xf1d2;</i>
+                  Title: Development of AUV for SAUVC During COVID-19 Authors:
+                  Mayank Navneet Mehta, Subash Mylraj, Vishva Nilesh Bhate{" "}
+                  <br></br>Abstract: This paper describes the design,
+                  implementation, and testing of control and vision algorithms
+                  for an AUV in virtual and real environments. Hardware design
+                  and the software stack of the vec6 underwater vehicle are
+                  described in this paper. The paper also presents a simulation
+                  test-bed, the uwv-simulator, which is developed using ROS and
+                  Gazebo. A custom arena similar to that used in the Singapore
+                  AUV Challenge is constructed in the simulation environment.
+                  The software stack is designed to execute higher and abstract
+                  algorithms without the trouble of going through the
+                  lower-level functions.<br></br> Conference: Global OCEANS
+                  2021, San Diego – Porto, Sept 20-23, 2021 <br></br>Link to the
+                  work:
+                  <a
+                    href="https://github.com/auvsocietyiiitdm/uwv-simulator"
+                    target="blank"
+                  >
+                    <i className="fa">&#xf1d2;</i>
                   </a>
-                 
-                      
-                   
-                  
                 </div>
                 <div className="modal-footer">
                   <button
