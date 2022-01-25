@@ -3,7 +3,8 @@ import ScrollAnimation from "react-animate-on-scroll";
 import axios from "axios";
 import { ToastContainer, toast, Slide } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Loader from "react-loader-spinner";
+
+import { Bars } from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 const Form = () => {
@@ -61,7 +62,7 @@ const Form = () => {
       {loading && (
         <div className="loading">
           <h4>We are processing your response</h4>
-          <Loader type="ThreeDots" color="#0dc1f7" height={100} width={100} />
+          <Bars color="#0dc1f7" height={100} width={100} />
         </div>
       )}
       {!loading && (

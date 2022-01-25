@@ -10,15 +10,17 @@ import Posts from "./components/Posts/Posts";
 import Teams from "./components/Teams/Teams";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Loader from "react-loader-spinner";
-import "animate.css/animate.min.css";
+
+import { Bars } from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+
+import "animate.css/animate.min.css";
 import Logo from "./assets/new_logo.png";
 
 const Loading = () => (
   <div className="loading">
     <img src={Logo} alt="logo" />
-    <Loader type="ThreeDots" color="#0dc1f7" height={100} width={100} />
+    <Bars color="#0dc1f7" height={100} width={100} />
   </div>
 );
 
