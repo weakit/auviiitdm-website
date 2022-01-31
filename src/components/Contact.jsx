@@ -4,7 +4,7 @@ import axios from "axios";
 import { ToastContainer, toast, Slide } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-import { Bars } from "react-loader-spinner";
+import { ThreeDots } from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 const Form = () => {
@@ -62,7 +62,7 @@ const Form = () => {
       {loading && (
         <div className="loading">
           <h4>We are processing your response</h4>
-          <Bars color="#0dc1f7" height={100} width={100} />
+          <ThreeDots color="#0dc1f7" height={100} width={100} />
         </div>
       )}
       {!loading && (
