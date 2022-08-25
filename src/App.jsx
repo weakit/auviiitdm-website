@@ -36,6 +36,7 @@ const App = () => {
     isLoading = setTimeout(() => setLoading(false), 3000);
     return () => clearInterval(isLoading);
   }, []);
+
   return (
     <>
       {loading && <Loading />}
