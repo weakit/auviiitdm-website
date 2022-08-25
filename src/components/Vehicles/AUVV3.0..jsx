@@ -1,17 +1,18 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
-import V2 from "../../assets/vehicles/auvv2.jpg";
 
-const AUVV2 = ({ setView }) => {
+import V3 from "../../assets/vehicles/auvv3.png";
+
+const AUV3 = ({ setView }) => {
   return (
     <>
       <div className="col-sm-3">
         <ScrollAnimation animateIn="fadeIn">
           <ul className="list-group">
-            <li className="list-group-item" onClick={() => setView("auv3")}>
-              AUV V3.0
+            <li className="list-group-item active">AUV V3.0</li>
+            <li className="list-group-item" onClick={() => setView("auv2")}>
+              AUV V2.0
             </li>
-            <li className="list-group-item active">AUV V2.0</li>
             <li className="list-group-item" onClick={() => setView("auv1")}>
               AUV V1.0
             </li>
@@ -20,7 +21,7 @@ const AUVV2 = ({ setView }) => {
       </div>
       <div className="col-sm-5">
         <ScrollAnimation animateIn="fadeIn">
-          <img src={V2} alt="version2" className="img-fluid" />
+          <img src={V3} alt="version3" className="img-fluid" />
         </ScrollAnimation>
       </div>
       <div className="col-sm-4">
@@ -79,11 +80,11 @@ const AUVV2 = ({ setView }) => {
                 <tbody>
                   <tr>
                     <th>Dimensions:</th>
-                    <td>53 x 73 x 35.5 (cm)</td>
+                    <td>49.2 x 45.4 x 40 (cm)</td>
                   </tr>
                   <tr>
                     <th>Weight:</th>
-                    <td>22 kg</td>
+                    <td>11 kg</td>
                   </tr>
                   <tr>
                     <th>DOFs:</th>
@@ -121,4 +122,4 @@ const AUVV2 = ({ setView }) => {
   );
 };
 
-export default AUVV2;
+export default AUV3;

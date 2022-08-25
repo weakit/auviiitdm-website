@@ -8,7 +8,7 @@ import Documentation from "../assets/AUV_v1.0_report.pdf";
 
 const About = () => {
   return (
-    <React.Fragment>
+    <>
       <div className="about mt-5" id="about">
         <ScrollAnimation animateIn="fadeInDown">
           <div className="container">
@@ -18,12 +18,12 @@ const About = () => {
               <div className="col-sm-8">
                 <h6 className="sub-heading">Who we are?</h6>
                 <p>
-                  We are an intellectual interdisciplinary team of undergraduate
-                  engineers working to build an autonomous underwater vehicle
-                  for various underwater robotics competitions. We aim to
-                  explore different dimensions of engineering, binding together
-                  our theoretical knowledge into a vehicle that can go and
-                  explore the vast seas.
+                  We are a team of 9 interdisciplinary undergraduate engineers
+                  working to build an autonomous water vehicle for various
+                  underwater robotics competetions. The team works in robotic
+                  domains of mechanical, electronics and software. We want to
+                  bind together our thereotical knowledge and put it into an
+                  under water vehicle that can go and explore the vast seas.
                 </p>
                 <div style={{ display: "flex", justifyContent: "left" }}>
                   <a href={Documentation} target="blank" className="mr-2">
@@ -65,7 +65,7 @@ const About = () => {
           </div>
         </ScrollAnimation>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 export default About;

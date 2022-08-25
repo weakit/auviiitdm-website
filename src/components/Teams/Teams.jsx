@@ -16,7 +16,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 const Teams = () => {
   return (
-    <React.Fragment>
+    <>
       <div className="teams" id="team">
         <div className="container">
           <Coremodal />
@@ -114,7 +114,7 @@ const Teams = () => {
           </ScrollAnimation>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 export default Teams;

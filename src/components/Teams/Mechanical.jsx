@@ -6,7 +6,7 @@ import Sukesh from "../../assets/auv_photos_team/sopho_mech/Sukesh/sukesh.jpeg";
 
 const Mechanicalmodel = () => {
   return (
-    <React.Fragment>
+    <>
       <div className="modal fade" id="mechanical">
         <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
           <div className="modal-content">
@@ -72,7 +72,7 @@ const Mechanicalmodel = () => {
           </div>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

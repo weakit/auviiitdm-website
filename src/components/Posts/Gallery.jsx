@@ -15,10 +15,8 @@ import Img12 from "../../assets/img/12.JPG";
 import Img13 from "../../assets/img/13.JPG";
 
 const Modal = ({ img, setModalView }) => {
-  console.log(img);
-  console.log(img.clientWidth);
   return (
-    <React.Fragment>
+    <>
       <div
         className="modal fade"
         id="imageModal"
@@ -45,7 +43,7 @@ const Modal = ({ img, setModalView }) => {
           </div>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 const Gallery = ({ setView }) => {

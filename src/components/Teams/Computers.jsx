@@ -3,7 +3,7 @@ import Vyshnav from "../../assets/auv_photos_team/sopho_comp/Vyshnav K/0.jpeg";
 
 const Computermodel = () => {
   return (
-    <React.Fragment>
+    <>
       <div className="modal fade" id="computers">
         <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
           <div className="modal-content">
@@ -39,7 +39,7 @@ const Computermodel = () => {
           </div>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
+import YTCard from "./YTCard";
 
 const Youtube = ({ setView }) => {
   const [links] = useState([
@@ -14,7 +15,7 @@ const Youtube = ({ setView }) => {
     { id: 9, url: "NsHS6F2bjII" },
   ]);
   return (
-    <React.Fragment>
+    <>
       <div className="col-sm-3">
         <ScrollAnimation animateIn="fadeIn">
           <ul className="list-group">
@@ -35,18 +36,12 @@ const Youtube = ({ setView }) => {
         <ScrollAnimation animateIn="fadeIn">
           <div className="row">
             {links.map((link) => (
-              <div className="col-sm-6" key={link.id}>
-                <iframe
-                  title="video"
-                  src={`https://www.youtube.com/embed/${link.url}?playlist=NsHS6F2bjII&loop=1`}
-                  className="youtube"
-                ></iframe>
-              </div>
+              <YTCard key={link.id} url={link.url} />
             ))}
           </div>
         </ScrollAnimation>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

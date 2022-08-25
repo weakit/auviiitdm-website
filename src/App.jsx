@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
-import "./styles/style.css";
+import { useState, useEffect } from "react";
+
+// components
 import LandingPage from "./components/LandingPage";
 import Navbar from "./components/Navbar";
 import AboutPage from "./components/About";
@@ -10,11 +11,15 @@ import Posts from "./components/Posts/Posts";
 import Teams from "./components/Teams/Teams";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import "animate.css/animate.min.css";
+
+// assests
 import Logo from "./assets/new_logo.png";
 
+// styles
 import { ThreeDots } from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import "./styles/style.css";
+import "animate.css/animate.min.css";
 
 const Loading = () => (
   <div className="loading">
@@ -23,18 +28,19 @@ const Loading = () => (
   </div>
 );
 
+// main jsx
 const App = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     let isLoading = null;
-    isLoading = setTimeout(() => setLoading(false), 8000);
+    isLoading = setTimeout(() => setLoading(false), 3000);
     return () => clearInterval(isLoading);
-  });
+  }, []);
   return (
-    <React.Fragment>
+    <>
       {loading && <Loading />}
       {!loading && (
-        <React.Fragment>
+        <>
           <LandingPage />
           <Navbar />
           <AboutPage />
@@ -45,9 +51,9 @@ const App = () => {
           <Teams />
           <Contact />
           <Footer />
-        </React.Fragment>
+        </>
       )}
-    </React.Fragment>
+    </>
   );
 };
 

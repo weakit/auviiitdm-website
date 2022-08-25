@@ -58,7 +58,7 @@ const Form = () => {
   };
 
   return (
-    <React.Fragment>
+    <>
       {loading && (
         <div className="loading">
           <h4>We are processing your response</h4>
@@ -100,7 +100,7 @@ const Form = () => {
           </button>
         </form>
       )}
-    </React.Fragment>
+    </>
   );
 };
 const Contacts = () => {
@@ -108,7 +108,7 @@ const Contacts = () => {
   const QUERY =
     "Indian+Institute+of+Information+Technology,+Design+and+Manufacturing,+Kancheepuram";
   return (
-    <React.Fragment>
+    <>
       <div className="contact" id="contact">
         <ScrollAnimation animateIn="slideInUp">
           <div className="container">
@@ -145,9 +145,6 @@ const Contacts = () => {
                       <b>Vyshnav K:</b> 9447138708
                     </span>
                     <br />
-                    <span>
-                      <b>Ruthwik Dasyam:</b> 7673972579
-                    </span>
                   </p>
                 </div>
                 <div className="btn-group">
@@ -198,7 +195,7 @@ const Contacts = () => {
           </div>
         </ScrollAnimation>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 
