@@ -47,7 +47,7 @@ const About = () => {
             <div className="card-deck mt-5 pb-3 text-center">
               <div className="card">
                 <img className="icon" src={Trophy} alt="" />
-                <p>2 Vehicles</p>
+                <p>3 Vehicles</p>
               </div>
               <div className="card">
                 <img className="icon" src={Faces} alt="" />

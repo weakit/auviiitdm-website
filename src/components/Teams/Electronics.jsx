@@ -1,9 +1,19 @@
 import React from "react";
-import Thilak from "../../assets/auv_photos_team/sopho_ele/Thilak/ThilakDP.jpg";
+import ProfileModal from "./ProfileModal";
 
-const Electronicmodal = () => {
+// images
+import Rahul from "../../assets/auv_photos_team/latest/electronics/Rahul.jpg";
+import MohamedIsmail from "../../assets/auv_photos_team/latest/electronics/MohamedIsmail.jpg";
+import Manuraj from "../../assets/auv_photos_team/latest/electronics/Manuraj.jpg";
+
+const Electronicsmodal = () => {
+  const teamMembers = [
+    { name: "Rahulkannan S", imageSource: Rahul, linkedInLink: "#" },
+    { name: "Manuraj Vanamala", imageSource: Manuraj, linkedInLink: "#" },
+    { name: "Ismail Mohamed", imageSource: MohamedIsmail, linkedInLink: "#" },
+  ];
   return (
-    <React.Fragment>
+    <>
       <div className="modal fade" id="electronics">
         <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
           <div className="modal-content">
@@ -15,16 +25,16 @@ const Electronicmodal = () => {
             </div>
             <div className="modal-body">
               <div className="img-flex">
-                <div className="profile-modal">
-                  <img src={Thilak} alt="Thilak" className="profile" />
-                  <a
-                    href="https://www.instagram.com/thilak_karanam/"
-                    target="blank"
-                  >
-                    <i className="fa">&#xf0e1;</i>
-                  </a>
-                  <p>Thilak</p>
-                </div>
+                {teamMembers.map((member) => {
+                  return (
+                    <ProfileModal
+                      key={member.name}
+                      name={member.name}
+                      imageSource={member.imageSource}
+                      linkedInLink={member.linkedInLink}
+                    />
+                  );
+                })}
               </div>
             </div>
             <div className="modal-footer">
@@ -39,8 +49,8 @@ const Electronicmodal = () => {
           </div>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 
-export default Electronicmodal;
+export default Electronicsmodal;

@@ -1,10 +1,29 @@
 import React from "react";
-import Advaith from "../../assets/auv_photos_team/sopho_mech/Advaith Kandiraju/0.jpeg";
-import Ruthwik from "../../assets/auv_photos_team/sopho_mech/Ruthwik Dasyam/Image.jpg";
-import Saksham from "../../assets/auv_photos_team/sopho_mech/Saksham Mishra/0 (1).jpeg";
-import Sukesh from "../../assets/auv_photos_team/sopho_mech/Sukesh/sukesh.jpeg";
+import ProfileModal from "./ProfileModal";
 
-const Mechanicalmodel = () => {
+import MuthuShravan from "../../assets/auv_photos_team/latest/mechanical/MuthuShravan-min.jpg";
+import SukeshJR from "../../assets/auv_photos_team/latest/mechanical/SukeshJR-min.jpg";
+import VishnuVardhanIyengar from "../../assets/auv_photos_team/latest/mechanical/VishnuVardhanIyengar.jpg";
+
+const Mechanicalmodal = () => {
+  const teamMembers = [
+    {
+      name: "Sukesh JR",
+      imageSource: SukeshJR,
+      linkedInLink: "https://www.linkedin.com/in/sukeshjr/",
+    },
+    {
+      name: "Vishnuvardhan Iyengar",
+      imageSource: VishnuVardhanIyengar,
+      linkedInLink:
+        "https://www.linkedin.com/in/vishnuvardhan-iyengar-4a5152221/",
+    },
+    {
+      name: "S Muthu Shravan",
+      imageSource: MuthuShravan,
+      linkedInLink: "https://www.linkedin.com/in/muthu-shravan-s-440a72135/",
+    },
+  ];
   return (
     <>
       <div className="modal fade" id="mechanical">
@@ -18,46 +37,16 @@ const Mechanicalmodel = () => {
             </div>
             <div className="modal-body">
               <div className="img-flex">
-                <div className="profile-modal">
-                  <img src={Advaith} alt="advaith" className="profile" />
-                  <a
-                    href="https://www.linkedin.com/in/advaith-kandiraju-14320517a/"
-                    target="blank"
-                  >
-                    <i className="fa">&#xf0e1;</i>
-                  </a>
-                  <p>Advaith Kandiraju</p>
-                </div>
-                <div className="profile-modal">
-                  <img src={Ruthwik} alt="ruthwik" className="profile" />
-                  <a
-                    href="https://www.linkedin.com/in/ruthwikdasyam/"
-                    target="blank"
-                  >
-                    <i className="fa">&#xf0e1;</i>
-                  </a>
-                  <p>Ruthwik Dasyam</p>
-                </div>
-                <div className="profile-modal">
-                  <img src={Saksham} alt="saksham" className="profile" />
-                  <a
-                    href="https://www.linkedin.com/in/saksham-mishra-a00153177/"
-                    target="blank"
-                  >
-                    <i className="fa">&#xf0e1;</i>
-                  </a>
-                  <p>Saksham Mishra</p>
-                </div>
-                <div className="profile-modal">
-                  <img src={Sukesh} alt="saksham" className="profile" />
-                  <a
-                    href="https://www.linkedin.com/in/sukesh-j-r-8809b4191/"
-                    target="blank"
-                  >
-                    <i className="fa">&#xf0e1;</i>
-                  </a>
-                  <p>Sukesh</p>
-                </div>
+                {teamMembers.map((member) => {
+                  return (
+                    <ProfileModal
+                      key={member.name}
+                      name={member.name}
+                      imageSource={member.imageSource}
+                      linkedInLink={member.linkedInLink}
+                    />
+                  );
+                })}
               </div>
             </div>
             <div className="modal-footer">
@@ -76,4 +65,4 @@ const Mechanicalmodel = () => {
   );
 };
 
-export default Mechanicalmodel;
+export default Mechanicalmodal;

@@ -1,7 +1,29 @@
-import React from "react";
-import Vyshnav from "../../assets/auv_photos_team/sopho_comp/Vyshnav K/0.jpeg";
+import React, { useState } from "react";
+import ProfileModal from "./ProfileModal";
 
-const Computermodel = () => {
+import Vyshnav from "../../assets/auv_photos_team/latest/computers/Vyshnav.jpeg";
+import MohamedAkliK from "../../assets/auv_photos_team/latest/computers/MohamedAkilK.jpg";
+import VenkataMadhav from "../../assets/auv_photos_team/latest/computers/VenkataMadhav.jpg";
+
+const Computermodal = () => {
+  const [teamMembers] = useState([
+    {
+      name: "Vyshnav K",
+      imageSource: Vyshnav,
+      linkedInLink: "https://www.linkedin.com/in/vyshnavk/",
+    },
+    {
+      name: "Mohamed Akil K",
+      imageSource: MohamedAkliK,
+      linkedInLink: "https://www.linkedin.com/in/mohamed-akil/",
+    },
+    {
+      name: "Venkata Madhav",
+      imageSource: VenkataMadhav,
+      linkedInLink: "https://www.linkedin.com/in/madhav2133/",
+    },
+  ]);
+
   return (
     <>
       <div className="modal fade" id="computers">
@@ -15,16 +37,16 @@ const Computermodel = () => {
             </div>
             <div className="modal-body">
               <div className="img-flex">
-                <div className="profile-modal">
-                  <img src={Vyshnav} alt="Vyshnav" className="profile" />
-                  <a
-                    href="https://www.linkedin.com/in/vyshnav-k-68b446191/"
-                    target="blank"
-                  >
-                    <i className="fa">&#xf0e1;</i>
-                  </a>
-                  <p>Vyshnav K</p>
-                </div>
+                {teamMembers.map((member) => {
+                  return (
+                    <ProfileModal
+                      key={member.name}
+                      name={member.name}
+                      imageSource={member.imageSource}
+                      linkedInLink={member.linkedInLink}
+                    />
+                  );
+                })}
               </div>
             </div>
             <div className="modal-footer">
@@ -43,4 +65,4 @@ const Computermodel = () => {
   );
 };
 
-export default Computermodel;
+export default Computermodal;
