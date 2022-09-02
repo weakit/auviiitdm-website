@@ -1,5 +1,12 @@
 import React from "react";
 
+/*
+a reusable dummy component which displays a single person's details
+  props:
+        self explanatory
+
+*/
+
 const ProfileModal = ({ imageSource, linkedInLink, name }) => {
   return (
     <div className="profile-modal">

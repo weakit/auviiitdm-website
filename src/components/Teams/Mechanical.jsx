@@ -1,8 +1,8 @@
 import React from "react";
 import ProfileModal from "./ProfileModal";
 
-import MuthuShravan from "../../assets/auv_photos_team/latest/mechanical/MuthuShravan-min.jpg";
-import SukeshJR from "../../assets/auv_photos_team/latest/mechanical/SukeshJR-min.jpg";
+import MuthuShravan from "../../assets/auv_photos_team/latest/mechanical/MuthuShravan.jpg";
+import SukeshJR from "../../assets/auv_photos_team/latest/mechanical/SukeshJR.jpg";
 import VishnuVardhanIyengar from "../../assets/auv_photos_team/latest/mechanical/VishnuVardhanIyengar.jpg";
 
 const Mechanicalmodal = () => {

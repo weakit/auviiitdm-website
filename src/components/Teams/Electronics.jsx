@@ -9,8 +9,16 @@ import Manuraj from "../../assets/auv_photos_team/latest/electronics/Manuraj.jpg
 const Electronicsmodal = () => {
   const teamMembers = [
     { name: "Rahulkannan S", imageSource: Rahul, linkedInLink: "#" },
-    { name: "Manuraj Vanamala", imageSource: Manuraj, linkedInLink: "#" },
-    { name: "Ismail Mohamed", imageSource: MohamedIsmail, linkedInLink: "#" },
+    {
+      name: "Manuraj Vanamala",
+      imageSource: Manuraj,
+      linkedInLink: "https://www.linkedin.com/in/manurajvanamala/",
+    },
+    {
+      name: "Ismail Mohamed",
+      imageSource: MohamedIsmail,
+      linkedInLink: "https://www.linkedin.com/in/mohamed-ismail-j-0ab340213/",
+    },
   ];
   return (
     <>
