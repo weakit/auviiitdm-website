@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import Img1 from "../../assets/img/1.PNG";
 import Img2 from "../../assets/img/2.JPG";
@@ -53,7 +53,7 @@ const Gallery = ({ setView }) => {
   const [thirdColumn] = useState([Img7, Img8, Img9, Img12]);
 
   return (
-    <React.Fragment>
+    <>
       <div className="col-sm-3">
         <ScrollAnimation animateIn="fadeIn">
           <ul className="list-group">
@@ -123,7 +123,7 @@ const Gallery = ({ setView }) => {
         </ScrollAnimation>
       </div>
       <Modal img={img} />
-    </React.Fragment>
+    </>
   );
 };
 

@@ -5,7 +5,7 @@ import { ToastContainer, toast, Slide } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import { ThreeDots } from "react-loader-spinner";
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+// import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 const Form = () => {
   const [name, setName] = useState("");
@@ -104,7 +104,7 @@ const Form = () => {
   );
 };
 const Contacts = () => {
-  const API_KEY = process.env.REACT_APP_GMAPS_API_KEY;
+  // const API_KEY = process.env.REACT_APP_GMAPS_API_KEY;
   const QUERY =
     "Indian+Institute+of+Information+Technology,+Design+and+Manufacturing,+Kancheepuram";
   return (
@@ -122,7 +122,7 @@ const Contacts = () => {
                   title="map"
                   frameBorder="0"
                   style={{ margin: "auto" }}
-                  src={`https://www.google.com/maps/embed/v1/place?key=${API_KEY}&q=${QUERY}`}
+                  // src={`https://www.google.com/maps/embed/v1/place?key=${API_KEY}&q=${QUERY}`}
                   allowFullScreen
                   width="100%"
                 ></iframe>
