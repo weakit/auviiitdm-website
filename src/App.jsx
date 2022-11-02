@@ -17,7 +17,7 @@ import Logo from "./assets/new_logo.png";
 
 // styles
 import { ThreeDots } from "react-loader-spinner";
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+// import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import "./styles/style.css";
 import "animate.css/animate.min.css";
 

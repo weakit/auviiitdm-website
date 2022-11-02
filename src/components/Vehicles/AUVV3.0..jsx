@@ -43,34 +43,37 @@ const AUV3 = ({ setView }) => {
               <h5 className="sub-heading">Hardware Side</h5>
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">
-                  Vectored orientation of thrusters for precise translational
-                  and rotational motion.
+                  The design aspect of this vehicle have a slightly marked
+                  departure from the previous two cehicles and it also houses
+                  two hulls.
                 </li>
                 <li className="list-group-item">
-                  Use of aluminium profile extrusions to mount thrusters,
-                  camera, gripper with ease.
+                  The vehicle has 5 DOFs viz. Heave, Surge, Sway, Yaw and Roll
+                  and it is controlled using 2 BlueRobotics T200 and 4
+                  BlueRobotics T100 thrusters, which are arranged in a vectored
+                  configuration.
                 </li>
                 <li className="list-group-item">
-                  Developed a roll-pitch restricting mechanism to achieve
-                  neutral buoyancy.
+                  The vehicle weighs 11 kgs and its dimensions are 49.2 x 45.4 x
+                  40 cm.
                 </li>
                 <li className="list-group-item">
-                  Introducing an array of custom hydrophones made using
-                  piezoceramic materials which acts as a passive sonar system.
+                  The vehicle has an open frame structure which was manufactured
+                  using acrylic of 5 mm thickness and it has two hulls, one 6"
+                  acryllic hull, and one 4" acryllic hull.
+                </li>
+                <li className="list-group-item">
+                  The frame was designed to serve as mounting points for
+                  attaching the thrusters.
                 </li>
               </ul>
               <h5 className="sub-heading pt-">Software Side</h5>
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">
-                  Developed complete simulation stack for vehicle to test
-                  algorithms.
-                </li>
-                <li className="list-group-item">
-                  In-house quaternion based sensor fusion
-                </li>
-                <li className="list-group-item">
-                  Yolov3 running in parallel with ROS for obstacle avoidance and
-                  object detection.
+                  This vehicle contains an Oak-D-series-3 camera, a 3D camera
+                  which is introduced to facilitate the obstacle and props
+                  detection along with path palnnning for performing various
+                  autonomy tasks.
                 </li>
               </ul>
             </div>
@@ -93,8 +96,8 @@ const AUV3 = ({ setView }) => {
                   <tr>
                     <th>Sensors:</th>
                     <td>
-                      Pressure sensor, 9-DoF IMU (Inertial Measurment Unit),
-                      Logitech C270 camera
+                      3 cm resolution analog water pressure sensor, BNO555 9-DoF
+                      IMU (Internal measurment Unit), OAK-D Camera
                     </td>
                   </tr>
                   <tr>
@@ -110,7 +113,7 @@ const AUV3 = ({ setView }) => {
                   </tr>
                   <tr>
                     <th>Microprocessor & Microcontroller </th>
-                    <td>NVIDIA Jetson Nano, Raspberry Pi 3, Arduino Mega</td>
+                    <td>NVIDIA Jetson Nano, STM32 Microcontroller</td>
                   </tr>
                 </tbody>
               </table>

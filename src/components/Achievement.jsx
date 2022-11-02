@@ -3,10 +3,8 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 // components
 import Sauvc from "./Sauvc";
-import YTCard from "./Posts/YTCard";
-import ResearchPaperLogo from "../assets/icons/resarch-logo.png";
+import ResearchPaperLogo from "../assets/icons/reasarch-undraw.svg";
 import materovLogo from "../assets/logo/materov-logo.png";
-import mateRov from "../assets/vehicles/mateRov.jpeg";
 
 const Achievements = () => {
   return (
