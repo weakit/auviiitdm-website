@@ -67,7 +67,7 @@ const Form = () => {
       )}
       {!loading && (
         <form className="form mb-3">
-          <div className="headliner">Get in Touch!!</div>
+          <div className="headliner">Get in Touch !!</div>
 
           <input
             type="text"

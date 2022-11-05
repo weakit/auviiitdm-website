@@ -13,6 +13,9 @@ import Img10 from "../../assets/img/10.JPG";
 import Img11 from "../../assets/img/11.JPG";
 import Img12 from "../../assets/img/12.JPG";
 import Img13 from "../../assets/img/13.JPG";
+import Img14 from "../../assets/img/2022-1.JPG";
+import Img15 from "../../assets/img/2022-2.JPG";
+import Img16 from "../../assets/img/2022-3.JPG";
 
 const Modal = ({ img, setModalView }) => {
   return (
@@ -48,9 +51,9 @@ const Modal = ({ img, setModalView }) => {
 };
 const Gallery = ({ setView }) => {
   const [img, setImg] = useState({});
-  const [firstColumn] = useState([Img1, Img2, Img3, Img10, Img13]);
-  const [secondColumn] = useState([Img4, Img5, Img6, Img11]);
-  const [thirdColumn] = useState([Img7, Img8, Img9, Img12]);
+  const [firstColumn] = useState([Img1, Img2, Img3, Img10, Img13, Img14]);
+  const [secondColumn] = useState([Img4, Img5, Img6, Img11, Img15]);
+  const [thirdColumn] = useState([Img7, Img8, Img9, Img12, Img16]);
 
   return (
     <>
