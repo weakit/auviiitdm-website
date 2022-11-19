@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import ProfileModal from "./ProfileModal";
 
 import Vyshnav from "../../assets/auv_photos_team/latest/computers/Vyshnav.jpeg";
@@ -6,7 +5,7 @@ import MohamedAkliK from "../../assets/auv_photos_team/latest/computers/MohamedA
 import VenkataMadhav from "../../assets/auv_photos_team/latest/computers/VenkataMadhav.jpg";
 
 const Computermodal = () => {
-  const [teamMembers] = useState([
+  const teamMembers = [
     {
       name: "Vyshnav K",
       imageSource: Vyshnav,
@@ -22,7 +21,7 @@ const Computermodal = () => {
       imageSource: VenkataMadhav,
       linkedInLink: "https://www.linkedin.com/in/madhav2133/",
     },
-  ]);
+  ];
 
   return (
     <>

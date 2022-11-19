@@ -1,5 +1,4 @@
 import React from "react";
-import CoreTeam from "../../assets/icons/core.png";
 import Computers from "../../assets/icons/code.png";
 import Electronics from "../../assets/icons/Electronics.png";
 import Mechanical from "../../assets/icons/mechanical.png";
@@ -11,6 +10,7 @@ import MechanicalModal from "./Mechanical";
 import BrilliantMindModal from "./BrilliantMinds";
 import PastYear1920Modal from "./PastYear1920";
 import PastYear1819Modal from "./PastYear1819";
+import PastYear2122 from "./PastYear2122";
 import Coremodal from "./Core";
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -24,6 +24,7 @@ const Teams = () => {
           <ElectronicsModal />
           <MechanicalModal />
           <BrilliantMindModal />
+          <PastYear2122 />
           <PastYear1920Modal />
           <PastYear1819Modal />
 
@@ -33,7 +34,7 @@ const Teams = () => {
           <hr></hr>
           <ScrollAnimation animateIn="fadeIn">
             <div className="card-container pb-3 mb-3">
-              <div className="cards">
+              {/* <div className="cards">
                 <button
                   className="card-button"
                   data-toggle="modal"
@@ -42,7 +43,7 @@ const Teams = () => {
                   <img src={CoreTeam} alt="Core team logo" />
                   <p className="m-3">Core Team</p>
                 </button>
-              </div>
+              </div> */}
               <div className="cards">
                 <button
                   className="card-button"
@@ -90,6 +91,16 @@ const Teams = () => {
           </div>
           <ScrollAnimation animateIn="fadeIn">
             <div className="card-container pb-3 text-center mb-3 center-cards">
+              <div className="cards">
+                <button
+                  className="card-button"
+                  data-toggle="modal"
+                  data-target="#past2122team"
+                >
+                  <img src={Pastyear} alt="2021-2022" />
+                  <p className="m-3">2021-2022</p>
+                </button>
+              </div>
               <div className="cards">
                 <button
                   className="card-button"
