@@ -6,6 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 import { ThreeDots } from "react-loader-spinner";
 // import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import GMAPS from "../assets/img/map.png";
 
 const Form = () => {
   const [name, setName] = useState("");
@@ -105,6 +106,10 @@ const Form = () => {
 };
 const Contacts = () => {
   // const API_KEY = process.env.REACT_APP_GMAPS_API_KEY;
+  const handleClick = () => {
+    window.location = "www.youtube.com";
+    console.log("fd");
+  };
   const QUERY =
     "Indian+Institute+of+Information+Technology,+Design+and+Manufacturing,+Kancheepuram";
   return (
@@ -118,14 +123,19 @@ const Contacts = () => {
             <hr></hr>
             <div className="row">
               <div className="col-sm-6">
+                {/* <a href="https://maps.app.goo.gl/QfG2fEeDmwMAcnR47"> */}
                 <iframe
+                  style={{ objectFit: "contain", overflow: "hidden" }}
                   title="map"
                   frameBorder="0"
-                  style={{ margin: "auto" }}
                   // src={`https://www.google.com/maps/embed/v1/place?key=${API_KEY}&q=${QUERY}`}
+                  // src="https://maps.app.goo.gl/QfG2fEeDmwMAcnR47"
+
+                  src={GMAPS}
                   allowFullScreen
                   width="100%"
                 ></iframe>
+                {/* </a> */}
 
                 <div className="links pt-1">
                   <p>
@@ -142,7 +152,11 @@ const Contacts = () => {
                     {"      "}
                     <br />
                     <span>
-                      <b>Vyshnav K:</b> 9447138708
+                      <b>Muthu Shravan:</b> 7092547036
+                    </span>
+                    <br />
+                    <span>
+                      <b>Venkata Madhav:</b> 9966541718
                     </span>
                     <br />
                   </p>
