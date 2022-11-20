@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useRef, useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import axios from "axios";
 import { ToastContainer, toast, Slide } from "react-toastify";
@@ -9,11 +9,11 @@ import { ThreeDots } from "react-loader-spinner";
 import GMAPS from "../assets/img/map.png";
 
 const Form = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
-  const [loading, setLoading] = useState(false);
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const subjectRef = useRef();
+  const messageRef = useRef();
+  const [loading, setLoading] = useState();
 
   const url = `https://auv-society-iiitdmk.herokuapp.com/sendemail`;
   const errorNotify = () =>
@@ -25,6 +25,11 @@ const Form = () => {
   const sendForm = (event) => {
     event.preventDefault();
     setLoading(true);
+    const name = nameRef.current.value;
+    const email = emailRef.current.value;
+    const subject = subjectRef.current.value;
+    const message = messageRef.current.value;
+    console.log(name, email, subject, message);
     if (name && email && subject && message) {
       const response = {
         name: name,
@@ -69,27 +74,10 @@ const Form = () => {
       {!loading && (
         <form className="form mb-3">
           <div className="headliner">Get in Touch !!</div>
-
-          <input
-            type="text"
-            placeholder="Name"
-            onChange={(e) => setName(e.target.value)}
-          />
-          <input
-            type="text"
-            placeholder="Email"
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <input
-            type="text"
-            placeholder="Subject"
-            onChange={(e) => setSubject(e.target.value)}
-          />
-          <input
-            type="text"
-            placeholder="Message"
-            onChange={(e) => setMessage(e.target.value)}
-          />
+          <input type="text" placeholder="Name" ref={nameRef} />
+          <input type="email" placeholder="Email" ref={emailRef} />
+          <input type="text" placeholder="Subject" ref={subjectRef} />
+          <input type="text" placeholder="Message" ref={messageRef} />
           <button
             type="button"
             onClick={(event) => {
@@ -105,13 +93,6 @@ const Form = () => {
   );
 };
 const Contacts = () => {
-  // const API_KEY = process.env.REACT_APP_GMAPS_API_KEY;
-  const handleClick = () => {
-    window.location = "www.youtube.com";
-    console.log("fd");
-  };
-  const QUERY =
-    "Indian+Institute+of+Information+Technology,+Design+and+Manufacturing,+Kancheepuram";
   return (
     <>
       <div className="contact" id="contact">
@@ -123,20 +104,14 @@ const Contacts = () => {
             <hr></hr>
             <div className="row">
               <div className="col-sm-6">
-                {/* <a href="https://maps.app.goo.gl/QfG2fEeDmwMAcnR47"> */}
                 <iframe
-                  style={{ objectFit: "contain", overflow: "hidden" }}
+                  style={{ objectFit: "cover", overflow: "hidden" }}
                   title="map"
                   frameBorder="0"
-                  // src={`https://www.google.com/maps/embed/v1/place?key=${API_KEY}&q=${QUERY}`}
-                  // src="https://maps.app.goo.gl/QfG2fEeDmwMAcnR47"
-
                   src={GMAPS}
                   allowFullScreen
                   width="100%"
                 ></iframe>
-                {/* </a> */}
-
                 <div className="links pt-1">
                   <p>
                     <b style={{ color: "#0dc1f7" }}>Mail to :</b>
