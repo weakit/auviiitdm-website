@@ -7,6 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { ThreeDots } from "react-loader-spinner";
 // import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import GMAPS from "../assets/img/map.png";
+import "../styles/components/Contact.css";
 
 const Form = () => {
   const nameRef = useRef();
@@ -104,14 +105,7 @@ const Contacts = () => {
             <hr></hr>
             <div className="row">
               <div className="col-sm-6">
-                <iframe
-                  style={{ objectFit: "cover", overflow: "hidden" }}
-                  title="map"
-                  frameBorder="0"
-                  src={GMAPS}
-                  allowFullScreen
-                  width="100%"
-                ></iframe>
+                <img src={GMAPS} alt={"AUVIIITDM location"}></img>
                 <div className="links pt-1">
                   <p>
                     <b style={{ color: "#0dc1f7" }}>Mail to :</b>
