@@ -6,9 +6,9 @@ import Trophy from "../assets/icons/trophy.svg";
 import ScrollAnimation from "react-animate-on-scroll";
 import Documentation from "../assets/AUV_v1.0_report.pdf";
 
-const About = ({ about }) => {
+const About = () => {
   return (
-    <div className="about mt-5" ref={about}>
+    <div className="about mt-5" id="about">
       <ScrollAnimation animateIn="fadeInDown">
         <div className="container">
           <h2 className="title">About Us</h2>
