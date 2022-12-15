@@ -1,27 +1,31 @@
-import React from "react";
 import ProfileModal from "./ProfileModal";
-
-import MuthuShravan from "../../assets/auv_photos_team/latest/mechanical/MuthuShravan.jpg";
-import SukeshJR from "../../assets/auv_photos_team/latest/mechanical/SukeshJR.jpg";
-import VishnuVardhanIyengar from "../../assets/auv_photos_team/latest/mechanical/VishnuVardhanIyengar.jpg";
+import Srikrishnan from "../../assets/auv_photos_team/2022/me/Srikrishnan.jpg";
+import Raghav from "../../assets/auv_photos_team/2022/me/Raghav.jpg";
+import Vishal from "../../assets/auv_photos_team/2022/me/Vishal.jpg";
+import Vijay from "../../assets/auv_photos_team/2022/me/Vijay.jpg";
+import Vaishnavi from "../../assets/auv_photos_team/2022/me/Vaishnavi.jpg";
 
 const Mechanicalmodal = () => {
   const teamMembers = [
     {
-      name: "Sukesh JR",
-      imageSource: SukeshJR,
-      linkedInLink: "https://www.linkedin.com/in/sukeshjr/",
+      name: "Srikrishnan",
+      imageSource: Srikrishnan,
     },
     {
-      name: "Vishnuvardhan Iyengar",
-      imageSource: VishnuVardhanIyengar,
-      linkedInLink:
-        "https://www.linkedin.com/in/vishnuvardhan-iyengar-4a5152221/",
+      name: "Raghav",
+      imageSource: Raghav,
     },
     {
-      name: "S Muthu Shravan",
-      imageSource: MuthuShravan,
-      linkedInLink: "https://www.linkedin.com/in/muthu-shravan-s-440a72135/",
+      name: "Vishal",
+      imageSource: Vishal,
+    },
+    {
+      name: "Vaishnavi",
+      imageSource: Vaishnavi,
+    },
+    {
+      name: "Vijay Krishna RV",
+      imageSource: Vijay,
     },
   ];
   return (

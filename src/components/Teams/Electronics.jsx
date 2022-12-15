@@ -2,22 +2,24 @@ import React from "react";
 import ProfileModal from "./ProfileModal";
 
 // images
-import Rahul from "../../assets/auv_photos_team/latest/electronics/Rahul.jpg";
-import MohamedIsmail from "../../assets/auv_photos_team/latest/electronics/MohamedIsmail.jpg";
-import Manuraj from "../../assets/auv_photos_team/latest/electronics/Manuraj.jpg";
+
+import Nithin from "../../assets/auv_photos_team/2022/ec/Nithin.jpg";
+import Mrudula from "../../assets/auv_photos_team/2022/ec/Mrudula.jpg";
+import Rahul from "../../assets/auv_photos_team/2022/ec/ec21b1057.jpg";
 
 const Electronicsmodal = () => {
   const teamMembers = [
-    { name: "Rahulkannan S", imageSource: Rahul, linkedInLink: "#" },
     {
-      name: "Manuraj Vanamala",
-      imageSource: Manuraj,
-      linkedInLink: "https://www.linkedin.com/in/manurajvanamala/",
+      name: "Nithin",
+      imageSource: Nithin,
     },
     {
-      name: "Ismail Mohamed",
-      imageSource: MohamedIsmail,
-      linkedInLink: "https://www.linkedin.com/in/mohamed-ismail-j-0ab340213/",
+      name: "Mrudula",
+      imageSource: Mrudula,
+    },
+    {
+      name: "KS Rahul",
+      imageSource: Rahul,
     },
   ];
   return (
